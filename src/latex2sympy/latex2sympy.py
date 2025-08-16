@@ -805,4 +805,4 @@ class LatexToSympy:
 
     def get_atom_symbol_for_atom_expr(self, atom_name, type):
         # subclassed in LatexToSympyAsUnit to handle unit parsing
-        return sympy.Symbol(atom_name, real=True, positive=True)
+        return sympy.Symbol(atom_name, real=True)
