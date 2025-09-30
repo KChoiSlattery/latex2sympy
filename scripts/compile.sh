@@ -36,8 +36,8 @@ setup()
 	echo ''
 	# Activate virtual environment
 	echo 'activate venv...'
-	if test -f .env/bin/activate; then
-		. .env/bin/activate && echo 'venv activated (bin)'
+	if test -f venv/bin/activate; then
+		. venv/bin/activate && echo 'venv activated (bin)'
 	else
 		exit 1
 	fi
