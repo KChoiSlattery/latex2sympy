@@ -8,8 +8,8 @@ cd $rel_path
 
 # Activate virtual environment
 echo "activating venv..."
-if test -f .env/bin/activate
-then . .env/bin/activate && echo "venv activate (bin)"
+if test -f venv/bin/activate
+then . venv/bin/activate && echo "venv activate (bin)"
 else exit 1
 fi
 
