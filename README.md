@@ -1,6 +1,6 @@
 # latex2sympy
 
-latex2sympy parses LaTeX math expressions and converts them into the equivalent SymPy form.
+latex2sympy parses LaTeX math expressions and converts them into the equivalent SymPy form. This fork dumbs down the parser to remove functions unused by my "cas-interface" project, and does all compilation with a Dockerfile. It also compiles the binaries for Alpine linux (which could be changed by changing the Dockerfile).
 
 ## Installation
 

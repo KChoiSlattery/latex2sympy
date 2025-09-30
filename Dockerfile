@@ -11,6 +11,19 @@ ENV ENV=/usr/profile
 
 RUN apk update && apk add \
     git \
-    python3
+    python3 \
+    cmake \
+    make \
+    g++ \
+    openjdk21
 
 WORKDIR /app
+
+# RUN python3 -m venv venv
+# RUN sh /venv/scripts/activate
+# RUN pip install -r dev-requirements.txt
+# RUN sh scripts/setup.sh
+
+# After activating the venv:
+# pip install conan
+# conan profile detect --force
