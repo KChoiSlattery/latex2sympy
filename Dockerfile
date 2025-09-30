@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM python:3.11-alpine
 
 # Customize the shell prompt.
 ARG USER_COLOR="\e[94m"
@@ -8,5 +8,9 @@ ARG PROMPT_CHAR_COLOR="\e[95m"
 ENV PROMPT_CHAR='$( [ "$(id -u)" -eq 0 ] && echo "#" || echo "$" )'
 RUN echo "export PS1='${USER_COLOR}\u:\033[0m${PWD_COLOR}\w\033[0m ${PROMPT_CHAR_COLOR}${PROMPT_CHAR}\033[0m '" > /usr/profile
 ENV ENV=/usr/profile
+
+RUN apk update && apk add \
+    git \
+    python3
 
 WORKDIR /app

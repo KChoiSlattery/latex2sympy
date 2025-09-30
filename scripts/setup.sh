@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # Get relative path of the root directory of the project
-rdir=`git rev-parse --git-dir`
-rel_path="$(dirname "$rdir")"
+# rdir=`git rev-parse --git-dir`
+# rel_path="$(dirname "$rdir")"
 # Change to that path and run the file
-cd $rel_path
+# cd $rel_path
 
 echo "creating venv..."
 if test -d .env
